@@ -1,0 +1,215 @@
+<html>
+
+<head>
+<style>
+input.MyButton {
+width: 300px;
+padding: 20px;
+cursor: pointer;
+font-weight: bold;
+font-size: 150%;
+background: #3366cc;
+color: #fff;
+border: 1px solid #3366cc;
+border-radius: 10px;
+}
+input.MyButton:hover {
+color: #ffff00;
+background: #000;
+border: 1px solid #fff;
+}
+</style>
+</head>
+<script>
+
+
+function jardim1() {
+
+if (localStorage.getItem('j1_ligado') == 'false') {
+
+document.write('<img src=http://192.168.0.99/?d2 height=10 width=10 >');
+localStorage.setItem('j1_ligado', 'true');
+window.location.reload();
+
+} else {
+
+document.write('<img src=http://192.168.0.99/?l2 height=10 width=10 >');
+localStorage.setItem('j1_ligado', 'false');
+window.location.reload();
+}
+
+}
+
+function jardim2() {
+
+if (localStorage.getItem('j2_ligado') == 'false') {
+
+document.write('<img src=http://192.168.0.99/?d3 height=10 width=10 >');
+localStorage.setItem('j2_ligado', 'true');
+window.location.reload();
+
+} else {
+
+document.write('<img src=http://192.168.0.99/?l3 height=10 width=10 >');
+localStorage.setItem('j2_ligado', 'false');
+window.location.reload();
+}
+
+}
+
+function garagem() {
+
+if (localStorage.getItem('g_ligado') == 'false') {
+
+document.write('<img src=http://192.168.0.99/?d4 height=10 width=10 >');
+localStorage.setItem('g_ligado', 'true');
+window.location.reload();
+
+} else {
+
+document.write('<img src=http://192.168.0.99/?l4 height=10 width=10 >');
+localStorage.setItem('g_ligado', 'false');
+window.location.reload();
+}
+
+}
+
+function sala1() {
+
+if (localStorage.getItem('s1_ligado') == 'false') {
+
+document.write('<img src=http://192.168.0.99/?d5 height=10 width=10 >');
+localStorage.setItem('s1_ligado', 'true');
+window.location.reload();
+
+} else {
+
+document.write('<img src=http://192.168.0.99/?l5 height=10 width=10 >');
+localStorage.setItem('s1_ligado', 'false');
+window.location.reload();
+}
+
+}
+function sala2() {
+
+if (localStorage.getItem('s2_ligado') == 'false') {
+
+document.write('<img src=http://192.168.0.99/?d6 height=10 width=10 >');
+localStorage.setItem('s2_ligado', 'true');
+window.location.reload();
+
+} else {
+
+document.write('<img src=http://192.168.0.99/?l6 height=10 width=10 >');
+localStorage.setItem('s2_ligado', 'false');
+window.location.reload();
+}
+}
+function sala3() {
+
+if (localStorage.getItem('s3_ligado') == 'false') {
+
+document.write('<img src=http://192.168.0.99/?d7 height=10 width=10 >');
+localStorage.setItem('s3_ligado', 'true');
+window.location.reload();
+
+} else {
+
+document.write('<img src=http://192.168.0.99/?l7 height=10 width=10 >');
+localStorage.setItem('s3_ligado', 'false');
+window.location.reload();
+}
+
+}
+
+function copa() {
+
+if (localStorage.getItem('c_ligado') == 'false') {
+
+document.write('<img src=http://192.168.0.99/?d8 height=10 width=10 >');
+localStorage.setItem('c_ligado', 'true');
+window.location.reload();
+
+} else {
+
+document.write('<img src=http://192.168.0.99/?l8 height=10 width=10 >');
+localStorage.setItem('c_ligado', 'false');
+window.location.reload();
+}
+}
+function cozinha() {
+
+if (localStorage.getItem('co_ligado') == 'false') {
+
+document.write('<img src=http://192.168.0.99/?d9 height=10 width=10 >');
+localStorage.setItem('co_ligado', 'true');
+window.location.reload();
+
+} else {
+
+document.write('<img src=http://192.168.0.99/?l9 height=10 width=10 >');
+localStorage.setItem('co_ligado', 'false');
+window.location.reload();
+}
+}
+
+function doFunction() {
+
+if (localStorage.getItem('ligado') == 'false') {
+
+document.write('<img src=http://192.168.0.99/?l6 height=10 width=10 >');
+localStorage.setItem('ligado', 'true');
+document.write(localStorage.getItem('ligado'));
+window.location.reload();
+
+} else {
+
+document.write('<img src=http://192.168.0.99/?d6 height=10 width=10 >');
+localStorage.setItem('ligado', 'false');
+document.write(localStorage.getItem('ligado'));
+window.location.reload();
+}
+
+
+
+}
+</script>
+
+<body>
+<center>
+<form>
+<input class="MyButton" type="button" value="Jardim 1" onclick="jardim1();" />
+</form>
+
+<form>
+<input class="MyButton" type="button" value="Jardim 2" onclick="jardim2();" />
+</form>
+
+<form>
+<input class="MyButton" type="button" value="Garagem" onclick="garagem();" />
+</form>
+
+
+<form>
+<input class="MyButton" type="button" value="Sala 1" onclick="sala1();" />
+</form>
+
+<form>
+<input class="MyButton" type="button" value="Sala 2" onclick="sala2();" />
+</form>
+
+
+<form>
+<input class="MyButton" type="button" value="Sala 3" onclick="sala3();" />
+</form>
+
+<form>
+<input class="MyButton" type="button" value="Copa" onclick="copa();" />
+</form>
+
+<form>
+<input class="MyButton" type="button" value="Cozinha" onclick="cozinha();" />
+</form>
+</center>
+</body>
+</html>
