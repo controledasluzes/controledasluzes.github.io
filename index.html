@@ -181,29 +181,42 @@ window.location.reload();
 
 function sala1() {
   
-  var checkBox = document.getElementById("myCheck");
+var checkBox = document.getElementById("myCheck");
 if (checkBox.checked == true) {
 
 var url = "https://controledasluzes.serveo.net"
-
-} else {
-
-var url = "http://192.168.0.99"
-
-}
-
 if (localStorage.getItem('s1_ligado') == 'false') {
 
 document.write('<img src='+url+'/?d5 height=10 width=10 >');
 localStorage.setItem('s1_ligado', 'true');
 window.location.reload();
-
-} else {
+  
+  } else {
 
 document.write('<img src='+url+'/?l5 height=10 width=10 >');
 localStorage.setItem('s1_ligado', 'false');
 window.location.reload();
 }
+
+} else {
+
+//var url = "http://192.168.0.99"
+if (localStorage.getItem('s1_ligado') == 'false') {
+
+document.write('<img src=http://192.168.0.99/?d5 height=10 width=10 >');
+localStorage.setItem('s1_ligado', 'true');
+window.location.reload();
+
+} else {
+
+document.write('<img src=http://192.168.0.99/?l5 height=10 width=10 >');
+localStorage.setItem('s1_ligado', 'false');
+window.location.reload();
+}
+
+
+}
+
 
 }
 function sala2() {
