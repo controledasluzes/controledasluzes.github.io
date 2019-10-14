@@ -2,7 +2,6 @@
 
 <head>
 <style>
-  
    html {
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,255,255,1) 0%, rgba(124,159,166,0.5662640056022409) 100%);  
@@ -23,322 +22,114 @@ color: #ffff00;
 background: #000;
 border: 1px solid #fff;
 }
-   
-   /* Customize the label (the container) */
-.container {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 22px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-/* Hide the browser's default checkbox */
-.container input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-
-/* Create a custom checkbox */
-.checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 25px;
-  width: 25px;
-  background-color: #eee;
-}
-
-/* On mouse-over, add a grey background color */
-.container:hover input ~ .checkmark {
-  background-color: #ccc;
-}
-
-/* When the checkbox is checked, add a blue background */
-.container input:checked ~ .checkmark {
-  background-color: #2196F3;
-}
-
-/* Create the checkmark/indicator (hidden when not checked) */
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-/* Show the checkmark when checked */
-.container input:checked ~ .checkmark:after {
-  display: block;
-}
-
-/* Style the checkmark/indicator */
-.container .checkmark:after {
-  left: 9px;
-  top: 5px;
-  width: 5px;
-  height: 10px;
-  border: solid white;
-  border-width: 0 3px 3px 0;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
 </style>
 </head>
 <script>
-
-
 function jardim1() {
- var checkBox = document.getElementById("myCheck");
-if (checkBox.checked == true) {
-
-var url = "https://controledasluzes.serveo.net"
-
-} else {
-
-var url = "http://192.168.0.99"
-
-}
-
 if (localStorage.getItem('j1_ligado') == 'false') {
-
-document.write('<img src='+url+'/?d2 height=10 width=10 >');
+document.write('<img src=http://192.168.0.99/?d2 height=10 width=10 >');
 localStorage.setItem('j1_ligado', 'true');
 window.location.reload();
-
 } else {
-
-document.write('<img src='+url+'/?l2 height=10 width=10 >');
+document.write('<img src=http://192.168.0.99/?l2 height=10 width=10 >');
 localStorage.setItem('j1_ligado', 'false');
 window.location.reload();
 }
-
 }
-
 function jardim2() {
-  
-  var checkBox = document.getElementById("myCheck");
-if (checkBox.checked == true) {
-
-var url = "https://controledasluzes.serveo.net"
-
-} else {
-
-var url = "http://192.168.0.99"
-
-}
-
 if (localStorage.getItem('j2_ligado') == 'false') {
-
-document.write('<img src='+url+'/?d3 height=10 width=10 >');
+document.write('<img src=http://192.168.0.99/?d3 height=10 width=10 >');
 localStorage.setItem('j2_ligado', 'true');
 window.location.reload();
-
 } else {
-
-document.write('<img src='+url+'/?l3 height=10 width=10 >');
+document.write('<img src=http://192.168.0.99/?l3 height=10 width=10 >');
 localStorage.setItem('j2_ligado', 'false');
 window.location.reload();
 }
-
 }
-
 function garagem() {
-  
-  var checkBox = document.getElementById("myCheck");
-if (checkBox.checked == true) {
-
-var url = "https://controledasluzes.serveo.net"
-
-} else {
-
-var url = "http://192.168.0.99"
-
-}
-
 if (localStorage.getItem('g_ligado') == 'false') {
-
-document.write('<img src='+url+'/?d4 height=10 width=10 >');
+document.write('<img src=http://192.168.0.99/?d4 height=10 width=10 >');
 localStorage.setItem('g_ligado', 'true');
 window.location.reload();
-
 } else {
-
-document.write('<img src='+url+'/?l4 height=10 width=10 >');
+document.write('<img src=http://192.168.0.99/?l4 height=10 width=10 >');
 localStorage.setItem('g_ligado', 'false');
 window.location.reload();
 }
-
 }
-
 function sala1() {
-  
-var checkBox = document.getElementById("myCheck");
-if (checkBox.checked == true) {
-
-var url = "https://controledasluzes.serveo.net"
 if (localStorage.getItem('s1_ligado') == 'false') {
-
-document.write('<img src='+url+'/?d5 height=10 width=10 >');
-localStorage.setItem('s1_ligado', 'true');
-window.location.reload();
-  
-  } else {
-
-document.write('<img src='+url+'/?l5 height=10 width=10 >');
-localStorage.setItem('s1_ligado', 'false');
-window.location.reload();
-}
-
-} else {
-
-//var url = "http://192.168.0.99"
-if (localStorage.getItem('s1_ligado') == 'false') {
-
 document.write('<img src=http://192.168.0.99/?d5 height=10 width=10 >');
 localStorage.setItem('s1_ligado', 'true');
 window.location.reload();
-
 } else {
-
 document.write('<img src=http://192.168.0.99/?l5 height=10 width=10 >');
 localStorage.setItem('s1_ligado', 'false');
 window.location.reload();
 }
-
-
-}
-
-
 }
 function sala2() {
-  
-  var checkBox = document.getElementById("myCheck");
-if (checkBox.checked == true) {
-
-var url = "https://controledasluzes.serveo.net"
-
-} else {
-
-var url = "http://192.168.0.99"
-
-}
-
 if (localStorage.getItem('s2_ligado') == 'false') {
-
-document.write('<img src='+url+'/?d6 height=10 width=10 >');
+document.write('<img src=http://192.168.0.99/?d6 height=10 width=10 >');
 localStorage.setItem('s2_ligado', 'true');
 window.location.reload();
-
 } else {
-
-document.write('<img src='+url+'/?l6 height=10 width=10 >');
+document.write('<img src=http://192.168.0.99/?l6 height=10 width=10 >');
 localStorage.setItem('s2_ligado', 'false');
 window.location.reload();
 }
 }
 function sala3() {
-  
-  var checkBox = document.getElementById("myCheck");
-if (checkBox.checked == true) {
-
-var url = "https://controledasluzes.serveo.net"
-
-} else {
-
-var url = "http://192.168.0.99"
-
-}
-
 if (localStorage.getItem('s3_ligado') == 'false') {
-
-document.write('<img src='+url+'/?d7 height=10 width=10 >');
+document.write('<img src=http://192.168.0.99/?d7 height=10 width=10 >');
 localStorage.setItem('s3_ligado', 'true');
 window.location.reload();
-
 } else {
-
-document.write('<img src='+url+'/?l7 height=10 width=10 >');
+document.write('<img src=http://192.168.0.99/?l7 height=10 width=10 >');
 localStorage.setItem('s3_ligado', 'false');
 window.location.reload();
 }
-
 }
-
 function copa() {
-  
-  var checkBox = document.getElementById("myCheck");
-if (checkBox.checked == true) {
-
-var url = "https://controledasluzes.serveo.net"
-
-} else {
-
-var url = "http://192.168.0.99"
-
-}
-
 if (localStorage.getItem('c_ligado') == 'false') {
-
-document.write('<img src='+url+'/?d8 height=10 width=10 >');
+document.write('<img src=http://192.168.0.99/?d8 height=10 width=10 >');
 localStorage.setItem('c_ligado', 'true');
 window.location.reload();
-
 } else {
-
-document.write('<img src='+url+'/?l8 height=10 width=10 >');
+document.write('<img src=http://192.168.0.99/?l8 height=10 width=10 >');
 localStorage.setItem('c_ligado', 'false');
 window.location.reload();
 }
 }
 function cozinha() {
-  
-  var checkBox = document.getElementById("myCheck");
-if (checkBox.checked == true) {
-
-var url = "https://controledasluzes.serveo.net"
-
-} else {
-
-var url = "http://192.168.0.99"
-
-}
-
 if (localStorage.getItem('co_ligado') == 'false') {
-
-document.write('<img src='+url+'/?d9 height=10 width=10 >');
+document.write('<img src=http://192.168.0.99/?d9 height=10 width=10 >');
 localStorage.setItem('co_ligado', 'true');
 window.location.reload();
-
 } else {
-
-document.write('<img src='+url+'/?l9 height=10 width=10 >');
+document.write('<img src=http://192.168.0.99/?l9 height=10 width=10 >');
 localStorage.setItem('co_ligado', 'false');
 window.location.reload();
 }
 }
-
-
+function doFunction() {
+if (localStorage.getItem('ligado') == 'false') {
+document.write('<img src=http://192.168.0.99/?l6 height=10 width=10 >');
+localStorage.setItem('ligado', 'true');
+document.write(localStorage.getItem('ligado'));
+window.location.reload();
+} else {
+document.write('<img src=http://192.168.0.99/?d6 height=10 width=10 >');
+localStorage.setItem('ligado', 'false');
+document.write(localStorage.getItem('ligado'));
+window.location.reload();
+}
+}
 </script>
 
 <body>
-  
-     <form>
-   <label class="container">Internet
-  <input type="checkbox" id="myCheck">
-  <span class="checkmark"></span>
-</label>
-   </form>
 <center>
-
 <form>
 <input class="MyButton" type="button" value="Jardim 1" onclick="jardim1();" />
 </form>
