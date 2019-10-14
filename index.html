@@ -97,8 +97,16 @@ border: 1px solid #fff;
 
 
 function jardim1() {
-  
+ var checkBox = document.getElementById("myCheck");
+if (checkBox.checked == true) {
 
+var url = "https://controledasluzes.serveo.net"
+
+} else {
+
+var url = "http://192.168.0.99"
+
+}
 
 if (localStorage.getItem('j1_ligado') == 'false') {
 
@@ -312,7 +320,7 @@ window.location.reload();
   
      <form>
    <label class="container">Internet
-  <input type="checkbox">
+  <input type="checkbox" id="myCheck">
   <span class="checkmark"></span>
 </label>
    </form>
