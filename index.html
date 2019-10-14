@@ -97,6 +97,17 @@ border: 1px solid #fff;
 
 
 function jardim1() {
+  
+ var checkBox = document.getElementById("myCheck");
+if (checkBox.checked == true) {
+
+var url = "https://controledasluzes.serveo.net"
+
+} else {
+
+var url = "http://192.168.0.99"
+
+}
 
 if (localStorage.getItem('j1_ligado') == 'false') {
 
@@ -114,6 +125,17 @@ window.location.reload();
 }
 
 function jardim2() {
+  
+  var checkBox = document.getElementById("myCheck");
+if (checkBox.checked == true) {
+
+var url = "https://controledasluzes.serveo.net"
+
+} else {
+
+var url = "http://192.168.0.99"
+
+}
 
 if (localStorage.getItem('j2_ligado') == 'false') {
 
@@ -131,6 +153,17 @@ window.location.reload();
 }
 
 function garagem() {
+  
+  var checkBox = document.getElementById("myCheck");
+if (checkBox.checked == true) {
+
+var url = "https://controledasluzes.serveo.net"
+
+} else {
+
+var url = "http://192.168.0.99"
+
+}
 
 if (localStorage.getItem('g_ligado') == 'false') {
 
@@ -148,6 +181,17 @@ window.location.reload();
 }
 
 function sala1() {
+  
+  var checkBox = document.getElementById("myCheck");
+if (checkBox.checked == true) {
+
+var url = "https://controledasluzes.serveo.net"
+
+} else {
+
+var url = "http://192.168.0.99"
+
+}
 
 if (localStorage.getItem('s1_ligado') == 'false') {
 
@@ -164,6 +208,17 @@ window.location.reload();
 
 }
 function sala2() {
+  
+  var checkBox = document.getElementById("myCheck");
+if (checkBox.checked == true) {
+
+var url = "https://controledasluzes.serveo.net"
+
+} else {
+
+var url = "http://192.168.0.99"
+
+}
 
 if (localStorage.getItem('s2_ligado') == 'false') {
 
@@ -179,6 +234,17 @@ window.location.reload();
 }
 }
 function sala3() {
+  
+  var checkBox = document.getElementById("myCheck");
+if (checkBox.checked == true) {
+
+var url = "https://controledasluzes.serveo.net"
+
+} else {
+
+var url = "http://192.168.0.99"
+
+}
 
 if (localStorage.getItem('s3_ligado') == 'false') {
 
@@ -196,6 +262,17 @@ window.location.reload();
 }
 
 function copa() {
+  
+  var checkBox = document.getElementById("myCheck");
+if (checkBox.checked == true) {
+
+var url = "https://controledasluzes.serveo.net"
+
+} else {
+
+var url = "http://192.168.0.99"
+
+}
 
 if (localStorage.getItem('c_ligado') == 'false') {
 
@@ -211,6 +288,17 @@ window.location.reload();
 }
 }
 function cozinha() {
+  
+  var checkBox = document.getElementById("myCheck");
+if (checkBox.checked == true) {
+
+var url = "https://controledasluzes.serveo.net"
+
+} else {
+
+var url = "http://192.168.0.99"
+
+}
 
 if (localStorage.getItem('co_ligado') == 'false') {
 
@@ -226,33 +314,14 @@ window.location.reload();
 }
 }
 
-function doFunction() {
 
-if (localStorage.getItem('ligado') == 'false') {
-
-document.write('<img src=http://192.168.0.99/?l6 height=10 width=10 >');
-localStorage.setItem('ligado', 'true');
-document.write(localStorage.getItem('ligado'));
-window.location.reload();
-
-} else {
-
-document.write('<img src=http://192.168.0.99/?d6 height=10 width=10 >');
-localStorage.setItem('ligado', 'false');
-document.write(localStorage.getItem('ligado'));
-window.location.reload();
-}
-
-
-
-}
 </script>
 
 <body>
   
      <form>
    <label class="container">Internet
-  <input type="checkbox" checked="false">
+  <input type="checkbox">
   <span class="checkmark"></span>
 </label>
    </form>
